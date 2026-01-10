@@ -1,0 +1,47 @@
+@media only screen and (min-width: 320px) {
+    header {
+        grid-template-columns: 44px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #C9E4F2;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .layout h1 {
+        grid-column: 1 / 3;
+    }
+
+    .layout .full-width {
+        grid-column: 1 / -1;
+    }
+
+
+    section .student-photo {
+        width: 250px;
+    }
+
+    .class-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,224 @@
+:root {
+    --primary-background: #EAF6FF;
+    --primary-accent: #5DB9E6;
+    --secondary-accent: #BEE7F8;
+    --main-text: #1F3A4D;
+    --headings: #16324F;
+    --muted-text: #4A6A80;
+    --button-color: #87d1f7;
+    --button-text-color: #FFFFFF;
+    --border-color: #C9E4F2;
+    --hover-state-color: #4AA8D8;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+/************************************ HEADER ************************************/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    padding: 15px;
+    border-bottom: solid 1px var(--border-color);
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: var(--headings);
+    font-weight:900;
+}
+
+/************************************ HAMBURGER NAVIGATION ************************************/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--headings);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+    background-color: var(--secondary-accent);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--main-text);
+    text-decoration: none;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation li.current {
+    background-color: var(--primary-accent);
+}
+
+.navigation a:hover {
+    background-color: var(--hover-state-color);
+    color: white;
+}
+
+/************************************ MAIN ************************************/
+
+main {
+    margin: 2rem 20px;
+}
+
+h1 {
+    color: var(--headings);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--headings);
+    background-color: var(--primary-accent);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+section {
+    background-color: var(--primary-background);
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.layout h1 {
+    grid-column: 1 / 3;
+}
+
+.layout .full-width {
+    grid-column: 1 / -1;
+}
+
+section .student-photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+p {
+    padding: 1.5rem;
+    margin: 0;
+    color: var(--main-text);
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+}
+
+.crs-btn {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.course-button {
+    flex: 1;
+    background-color: var(--button-color);
+    color: var(--main-text);
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.course-button:hover {
+    background-color: var(--hover-state-color);
+    color: white;
+}
+
+.course {
+    background-color: var(--secondary-accent);
+    padding: 0.75rem;
+    border-radius: 6px;
+    text-align: center;
+    color: var(--main-text);
+}
+
+.completed {
+    background-color: #5de686;
+    color: var(--main-text);
+}
+
+.credit-total {
+    text-align: center;
+    color: var(--main-text);
+}
+
+/************************************ FOOTER ************************************/
+footer {
+    background-color: var(--secondary-accent);
+    padding: 1rem 10px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 1rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+}
+
+.social a:hover {
+    background-color: var(--hover-state-color);
+}
+
+footer p {
+    padding: 0;
+}
