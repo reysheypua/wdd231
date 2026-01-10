@@ -112,17 +112,17 @@ section {
     background-color: var(--primary-background);
 }
 
-.layout {
+main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.layout h1 {
+main h1 {
     grid-column: 1 / 3;
 }
 
-.layout .full-width {
+main .full-width {
     grid-column: 1 / -1;
 }
 
