@@ -171,6 +171,7 @@ p {
     border-radius: 6px;
     text-align: center;
     color: var(--main-text);
+    margin: 0.5rem;
 }
 
 .completed {
