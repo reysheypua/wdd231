@@ -91,10 +91,6 @@ header span {
 
 /************************************ MAIN ************************************/
 
-main {
-    margin: 2rem 20px;
-}
-
 h1 {
     color: var(--headings);
     margin: 0;
@@ -116,6 +112,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin: 2rem 20px;
 }
 
 main h1 {
