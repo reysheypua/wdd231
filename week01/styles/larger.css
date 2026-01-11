@@ -1,6 +1,11 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 38rem){
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     header {
-        grid-template-columns: 44px auto;
+        grid-template-columns: 24px auto;
     }
 
     .hamburger {
@@ -9,7 +14,7 @@
 
     .navigation {
         display: block;
-        border-bottom: solid 1px #C9E4F2;
+        border-bottom: solid 1px #eee;
     }
 
     .navigation ul {
@@ -18,30 +23,5 @@
 
     .navigation a {
         border: none;
-    }
-
-    .layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-
-    .layout h1 {
-        grid-column: 1 / 3;
-    }
-
-    .layout .full-width {
-        grid-column: 1 / -1;
-    }
-
-
-    section .student-photo {
-        width: 250px;
-    }
-
-    .class-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
     }
 }
