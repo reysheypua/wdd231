@@ -4,7 +4,6 @@
     --secondary-accent: #BEE7F8;
     --main-text: #1F3A4D;
     --headings: #16324F;
-    --muted-text: #4A6A80;
     --button-color: #87d1f7;
     --button-text-color: #FFFFFF;
     --border-color: #C9E4F2;
@@ -86,7 +85,7 @@ header span {
 
 .navigation a:hover {
     background-color: var(--hover-state-color);
-    color: white;
+    color: var(--button-text-color);
 }
 
 /************************************ MAIN ************************************/
@@ -159,7 +158,7 @@ p {
 
 .course-button:hover {
     background-color: var(--hover-state-color);
-    color: white;
+    color: var(--button-text-color);
 }
 
 .course {
