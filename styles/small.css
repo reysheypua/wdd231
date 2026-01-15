@@ -56,6 +56,14 @@ header span {
     content: "\00D7"
 }
 
+.layout {
+    grid-template-columns: 1fr;
+}
+
+.layout .full-width {
+    grid-column: auto;
+}
+
 .navigation {
     display: none;
     background-color: var(--secondary-accent);

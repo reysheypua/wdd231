@@ -16,6 +16,10 @@
         border: none;
     }
 
+    .navigation ul {
+        display: flex;
+    }
+
     .layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
