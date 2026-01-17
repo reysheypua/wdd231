@@ -13,10 +13,14 @@
     <meta property="og:description"
         content="Liloan, Cebu Chamber of Commerce. Connecting local businesses, providing growth resources, and advocating for the economic health of our community.">
     <meta property="og:image"
-        content="">
-    <meta property="url" content="https://reysheypua.github.io/wdd231/chamber/directory.html">
+        content="https://github.com/reysheypua/wdd231/blob/main/chamber/images/og-image-lcc.jpg?raw=true">
+    <meta property="og:url" content="https://reysheypua.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-wide.css">
@@ -27,33 +31,40 @@
 
 <body>
     <header>
-        <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce Logo" width="500" height="500">
+        <img src="images/chamber-of-commerce-inverted-logo.png" alt="Chamber of Commerce Logo" width="500" height="500">
         <span>Liloan Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger"></button>
         <nav id="nav-bar" class="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discover</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <h1>Home</h1>
+        <div class="menu">
+            <button id="grid"></button>
+            <button id="list"></button>
+        </div>
+        <div class="grid"></div>
+    </main>
     <footer>
         <div class="contact info">
-            <h3 style="font-weight: bold">Liloan Chamber of Commerce</h3>
-            <h3 style="font-weight: normal;">Cebu North Business Hub, Unit 204 Poblacion</h3>
-            <h3 style="font-weight: normal;">Liloan, Cebu, Philippines</h3>
-            <h3 style="font-weight: normal;">info@liloancc.org</h3>
-            <h3 style="font-weight: normal;">(+63) 123-4567</h3>
+            <h3 class="chamber-name">Liloan Chamber of Commerce</h3>
+            <h3>Cebu North Business Hub, Unit 204 Poblacion</h3>
+            <h3>Liloan, Cebu, Philippines</h3>
+            <h3>info@liloancc.org</h3>
+            <h3>(032) 123 4567</h3>
         </div>
         <div class="social-media">
             <img src="images/youtube.svg" alt="YouTube">
             <img src="images/twitter-x.svg" alt="Twitter-X">
             <img src="images/linkedin.svg" alt="LinkedIn">
         </div>
-        <div>
+        <div class="class-info">
             <h3>WDD231 Class Project</h3>
             <h3>Reyshey Pua</h3>
             <p>©<span id="currentyear"></span> Liloan Chamber of Commerce</p>

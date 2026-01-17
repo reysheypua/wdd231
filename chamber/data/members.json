@@ -1,0 +1,67 @@
+{
+  "businesses": [
+    {
+      "name": "Titay's Liloan Rosquillos and Delicacies, Inc.",
+      "address": "Poblacion, Liloan, 6002 Cebu",
+      "phone": "(032) 564 2237",
+      "website": "https://www.titays.com",
+      "image": "images/titays-bakery.png",
+      "membershipLevel": 3,
+      "industry": "Food & Beverage"
+    },
+    {
+      "name": "Duros Land Properties, Inc.",
+      "address": "Upper Poblacion, Liloan, 6002 Cebu",
+      "phone": "(032) 346 0439",
+      "website": "https://durosland.com",
+      "image": "images/duros-land.png",
+      "membershipLevel": 3,
+      "industry": "Real Estate"
+    },
+    {
+      "name": "Papa Kit's Marina and Fishing Lagoon",
+      "address": "Silot Bay, Liloan, 6002 Cebu",
+      "phone": "(032) 505 4595",
+      "website": "https://papakitsmarina.com",
+      "image": "images/papa-kits.jpg",
+      "membershipLevel": 2,
+      "industry": "Tourism & Leisure"
+    },
+    {
+      "name": "Cebu Iron Foundry Corp. (CIFCO)",
+      "address": "Tayud, Liloan, 6002 Cebu",
+      "phone": "(032) 424 8115",
+      "website": "http://cifco.com.ph",
+      "image": "images/cebu-iron-foundry.jpg",
+      "membershipLevel": 2,
+      "industry": "Manufacturing"
+    },
+    {
+      "name": "Topline Seabus (Liloan Pier)",
+      "address": "Liloan Port, Poblacion, Liloan, 6002 Cebu",
+      "phone": "(032) 266 1051",
+      "website": "https://topline.ph",
+      "image": "images/topline-seabus.png",
+      "membershipLevel": 1,
+      "industry": "Transportation"
+    },
+    {
+      "name": "Gaisano Grand Mall Liloan",
+      "address": "Yati, Liloan, 6002 Cebu",
+      "phone": "(032) 424 1021",
+      "website": "https://gaisanograndmalls.com",
+      "image": "images/gaisano-grand-mall.jpg",
+      "membershipLevel": 2,
+      "industry": "Retail"
+    },
+    {
+      "name": "Cebu Pool Builder",
+      "address": "Jubay, Liloan, 6002 Cebu",
+      "phone": "(032) 424 3435",
+      "website": "https://cebupoolbuilder.com",
+      "image": "images/cebu-pool-builder.png",
+      "membershipLevel": 2,
+      "industry": "Construction & Design"
+    }
+  ]
+}

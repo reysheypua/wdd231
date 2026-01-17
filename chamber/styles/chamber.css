@@ -2,7 +2,7 @@
     --primary-color: #1F3A4D;
     --secondary-color: #3E6C8A;
     --accent-color: #8EC6E8;
-    --page-background: #F8FAFC;
+    --page-background: #f2f5f8;
     --section-background: #E9EEF3;
     --card-background: #FFFFFF;
     --border-color: #CBD5E1;
@@ -23,9 +23,14 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: 'Montserrat', sans-serif;
   color: #1F3A4D;
+  font-weight: normal;
+}
+
+.chamber-name {
+    font-weight: bold;
 }
 
 a {
@@ -40,6 +45,7 @@ header {
     align-items: center;
     border-bottom: solid 1px var(--border-color);
     column-gap: 8px;
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -54,6 +60,7 @@ header span {
     color: var(--headings);
     font-weight: 900;
     padding: 1rem 0;
+    color: white;
 }
 
 /************************************ HAMBURGER NAVIGATION ************************************/
@@ -101,7 +108,7 @@ header span {
 .navigation a {
     display: block;
     padding: 0.8rem 10px;
-    color: var(--main-text);
+    color: white;
     text-decoration: none;
     border-bottom: solid 1px var(--border-color);
 }
@@ -113,4 +120,36 @@ header span {
 .navigation a:hover {
     background-color: var(--hover-state-color);
     color: var(--button-text-color);
+}
+
+/************************************ FOOTER ************************************/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+h3, footer p {
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+.social-media {
+    margin: 0 auto;
+}
+
+.social-media img {
+    width: 60px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 0.8rem;
+}
+
+/************************************ MAIN ************************************/
+
+body {
+    background-color: var(--page-background);
 }
