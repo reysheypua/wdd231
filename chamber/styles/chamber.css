@@ -2,6 +2,7 @@
     --primary-color: #1F3A4D;
     --secondary-color: #3E6C8A;
     --accent-color: #8EC6E8;
+    --font-color: #1E2933;
     --page-background: #f2f5f8;
     --card-background: #FFFFFF;
     --border-color: #CBD5E1;
@@ -15,15 +16,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #1E2933;
-    background-color: #F8FAFC;
+    color: var(--font-color);
     line-height: 1.6;
     background-color: var(--page-background);
 }
 
 h1, h2, p {
     font-family: 'Montserrat', sans-serif;
-    color: #1F3A4D;
+    color: var(--font-color);
     font-weight: normal;
 }
 
@@ -32,7 +32,7 @@ h1, h2, p {
 }
 
 a {
-    color: #1F3A4D;
+    color: var(--font-color);
     font-weight: 600;
 }
 
@@ -44,6 +44,7 @@ header {
     border-bottom: solid 1px var(--border-color);
     column-gap: 8px;
     background-color: var(--secondary-color);
+    color: white;
 }
 
 header img {
@@ -90,6 +91,7 @@ header span {
 .navigation {
     display: none;
     background-color: var(--secondary-accent);
+    color: white;
     margin-right: 2rem;
 }
 
@@ -130,6 +132,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2rem;
     background-color: var(--secondary-color);
+    color: white;
     justify-items: center;
     gap: 2rem;
 }
