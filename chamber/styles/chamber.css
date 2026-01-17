@@ -3,12 +3,9 @@
     --secondary-color: #3E6C8A;
     --accent-color: #8EC6E8;
     --page-background: #f2f5f8;
-    --section-background: #E9EEF3;
     --card-background: #FFFFFF;
     --border-color: #CBD5E1;
-    --primary-text-color: #1E2933;
     --secondary-text-color: #475569;
-    --button-color: #1F3A4D;
     --hover-state-color: #162C3A;
 }
 
@@ -17,16 +14,17 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #1E2933;
-  background-color: #F8FAFC;
-  line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1E2933;
+    background-color: #F8FAFC;
+    line-height: 1.6;
+    background-color: var(--page-background);
 }
 
-h1, h2, h3, p {
-  font-family: 'Montserrat', sans-serif;
-  color: #1F3A4D;
-  font-weight: normal;
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #1F3A4D;
+    font-weight: normal;
 }
 
 .chamber-name {
@@ -34,8 +32,8 @@ h1, h2, h3, p {
 }
 
 a {
-  color: #1F3A4D;
-  font-weight: 600;
+    color: #1F3A4D;
+    font-weight: 600;
 }
 
 /************************************ HEADER ************************************/
@@ -57,7 +55,6 @@ header img {
 
 header span {
     font-size: 1.4rem;
-    color: var(--headings);
     font-weight: 900;
     padding: 1rem 0;
     color: white;
@@ -137,7 +134,7 @@ footer {
     gap: 2rem;
 }
 
-h3, footer p {
+footer p {
     font-size: 16px;
     margin: 0;
     color: white;
@@ -163,10 +160,6 @@ h3, footer p {
 
 /************************************ MAIN ************************************/
 
-body {
-    background-color: var(--page-background);
-}
-
 main {
     margin-bottom: 5rem;
 }
@@ -191,7 +184,6 @@ main h1 {
     border: none;
     background-color: var(--primary-color);
     color: white;
-    cursor: pointer;
     border-radius: 6px;
     transition: transform 0.1s ease-in-out; 
     cursor: pointer;
