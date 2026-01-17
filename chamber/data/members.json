@@ -2,16 +2,20 @@
   "businesses": [
     {
       "name": "Titay's Liloan Rosquillos and Delicacies, Inc.",
+      "tagline": "The Home of the Original Liloan Rosquillos",
       "address": "Poblacion, Liloan, 6002 Cebu",
+      "email": "info@titays.com",
       "phone": "(032) 564 2237",
       "website": "https://www.titays.com",
-      "image": "images/titays-bakery.png",
+      "image": "images/titays-bakery.jpg",
       "membershipLevel": 3,
       "industry": "Food & Beverage"
     },
     {
       "name": "Duros Land Properties, Inc.",
+      "tagline": "Building Communities, Enriching Lives",
       "address": "Upper Poblacion, Liloan, 6002 Cebu",
+      "email": "sales@durosland.com",
       "phone": "(032) 346 0439",
       "website": "https://durosland.com",
       "image": "images/duros-land.png",
@@ -20,7 +24,9 @@
     },
     {
       "name": "Papa Kit's Marina and Fishing Lagoon",
+      "tagline": "Your Adventure, Our Passion",
       "address": "Silot Bay, Liloan, 6002 Cebu",
+      "email": "reservations@papakitsmarina.com",
       "phone": "(032) 505 4595",
       "website": "https://papakitsmarina.com",
       "image": "images/papa-kits.jpg",
@@ -29,7 +35,9 @@
     },
     {
       "name": "Cebu Iron Foundry Corp. (CIFCO)",
+      "tagline": "Quality Castings for Industry Excellence",
       "address": "Tayud, Liloan, 6002 Cebu",
+      "email": "operations@cifco.com.ph",
       "phone": "(032) 424 8115",
       "website": "http://cifco.com.ph",
       "image": "images/cebu-iron-foundry.jpg",
@@ -38,7 +46,9 @@
     },
     {
       "name": "Topline Seabus (Liloan Pier)",
+      "tagline": "Connecting People, Bridging Islands",
       "address": "Liloan Port, Poblacion, Liloan, 6002 Cebu",
+      "email": "support@topline.ph",
       "phone": "(032) 266 1051",
       "website": "https://topline.ph",
       "image": "images/topline-seabus.png",
@@ -47,7 +57,9 @@
     },
     {
       "name": "Gaisano Grand Mall Liloan",
+      "tagline": "Where Everyday is a Grand Day",
       "address": "Yati, Liloan, 6002 Cebu",
+      "email": "customerservice@gaisanograndmalls.com",
       "phone": "(032) 424 1021",
       "website": "https://gaisanograndmalls.com",
       "image": "images/gaisano-grand-mall.jpg",
@@ -56,10 +68,12 @@
     },
     {
       "name": "Cebu Pool Builder",
+      "tagline": "Your Dream Pool, Our Expertise",
       "address": "Jubay, Liloan, 6002 Cebu",
+      "email": "contact@cebupoolbuilder.com",
       "phone": "(032) 424 3435",
       "website": "https://cebupoolbuilder.com",
-      "image": "images/cebu-pool-builder.png",
+      "image": "images/cebu-pool-builder.jpg",
       "membershipLevel": 2,
       "industry": "Construction & Design"
     }

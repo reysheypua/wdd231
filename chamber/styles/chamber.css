@@ -153,3 +153,58 @@ h3, footer p {
 body {
     background-color: var(--page-background);
 }
+
+/************************************ CARD LAYOUT ************************************/
+
+#display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#display.grid section {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#display.grid img {
+    max-width: 150px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#display.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#display.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+#display.list section:nth-child(even) {
+    background-color: #eee;
+}
+
+#display.list img, #display.list .tagline {
+    display: none;
+}
+
+#display.list h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#display.list p {
+    margin: 0;
+    font-size: 0.9rem;
+}
