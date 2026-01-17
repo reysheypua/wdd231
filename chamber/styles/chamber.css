@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #1F3A4D;
+    --secondary-color: #3E6C8A;
+    --accent-color: #8EC6E8;
+    --page-background: #F8FAFC;
+    --section-background: #E9EEF3;
+    --card-background: #FFFFFF;
+    --border-color: #CBD5E1;
+    --primary-text-color: #1E2933;
+    --secondary-text-color: #475569;
+    --button-color: #1F3A4D;
+    --hover-color: #162C3A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #1E2933;
+  background-color: #F8FAFC;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1F3A4D;
+}
+
+a {
+  color: #1F3A4D;
+  font-weight: 600;
+}
+
+/************************************ HEADER ************************************/
+header {
+    display: grid;
+    grid-template-columns: 75px auto 44px;
+    align-items: center;
+    border-bottom: solid 1px var(--border-color);
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: var(--headings);
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+/************************************ HAMBURGER NAVIGATION ************************************/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--headings);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7"
+}
+
+.layout {
+    grid-template-columns: 1fr;
+}
+
+.layout .full-width {
+    grid-column: auto;
+}
+
+.navigation {
+    display: none;
+    background-color: var(--secondary-accent);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--main-text);
+    text-decoration: none;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation li.current {
+    background-color: var(--primary-accent);
+}
+
+.navigation a:hover {
+    background-color: var(--hover-state-color);
+    color: var(--button-text-color);
+}

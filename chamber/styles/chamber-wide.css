@@ -1,0 +1,33 @@
+@media only screen and (min-width: 580px) {
+    header {
+        display: grid;
+        grid-template-columns: 44px auto 1fr;
+        align-items: center;
+    }
+
+    header img {
+        width: 175%;
+    }
+
+    header span {
+        padding-left: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: right;
+        padding-right: 2rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+}
