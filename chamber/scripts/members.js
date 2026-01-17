@@ -36,7 +36,6 @@ const displayMembers = (members) => {
         industry.classList.add('industry');
         address.classList.add('address');
         infoContainer.classList.add('contact-container');
-        email.classList.add('email');
         
         email.innerHTML = `<strong>EMAIL:</strong> ${member.email}`;
         phone.innerHTML = `<strong>PHONE:</strong> ${member.phone}`;

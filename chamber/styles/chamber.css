@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1F3A4D;
-    --secondary-color: #3E6C8A;
+    --secondary-color: #385b83;
     --accent-color: #8EC6E8;
     --font-color: #1E2933;
     --page-background: #f2f5f8;
@@ -66,7 +66,7 @@ header span {
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(--headings);
+    color: white;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -90,7 +90,7 @@ header span {
 
 .navigation {
     display: none;
-    background-color: var(--secondary-accent);
+    background-color: var(--secondary-color);
     color: white;
     margin-right: 2rem;
 }
@@ -117,7 +117,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: var(--primary-accent);
+    background-color: var(--secondary-color);
 }
 
 .navigation a:hover {
@@ -141,6 +141,8 @@ footer p {
     font-size: 16px;
     margin: 0;
     color: white;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .social-media {
