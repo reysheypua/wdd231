@@ -223,25 +223,73 @@ header span {
 
 .spotlights {
     display: grid;
-    gap: 1rem;
-    padding: 1rem 2rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
 }
 
-.spotlight {
+.spotlight.card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.spotlight h2 {
+    color: var(--font-color);
+    margin: 0;
+    padding-top: 12px;
     text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.spotlight .tagline {
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-style: italic;
+    color: var(--secondary-text-color);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.spotlight-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
 }
 
 .spotlight img {
     width: 100px;
-    height: auto;
-    margin-bottom: 0.5rem;
+    height: 100px;
+    object-fit: contain;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    filter: none;
 }
 
-.spotlight a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: var(--primary-color);
-    font-weight: bold;
+.spotlight-info {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.spotlight-info p {
+    margin: 5px 0;
+    color: #1E2933;
+    overflow-wrap: break-word; 
+    word-break: break-all;
+}
+
+.spotlight-info strong {
+    color: #000;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }
 
 p {

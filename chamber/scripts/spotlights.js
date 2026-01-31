@@ -17,16 +17,13 @@ async function getMembers() {
 }
 
 function displaySpotlights(businesses) {
-    // Gold (3) and Silver (2) members only
     const qualifiedBusinesses = businesses.filter(
         business => business.membershipLevel === 3 || business.membershipLevel === 2
     );
 
-    // Randomize order
     qualifiedBusinesses.sort(() => 0.5 - Math.random());
 
-    // Select 2 or 3 spotlights
-    const count = Math.floor(Math.random() * 2) + 2; // 2 or 3
+    const count = Math.floor(Math.random() * 2) + 2;
     const selectedBusinesses = qualifiedBusinesses.slice(0, count);
 
     spotlightContainer.innerHTML = '';
@@ -38,12 +35,17 @@ function displaySpotlights(businesses) {
         let membershipText = business.membershipLevel === 3 ? 'Gold' : 'Silver';
 
         card.innerHTML = `
-            <img src="${business.image}" alt="${business.name} logo" loading="lazy">
-            <h3>${business.name}</h3>
-            <p class="tagline">${business.tagline}</p>
-            <p><strong>EMAIL:</strong> ${business.email}</p>
-            <p><strong>PHONE:</strong> ${business.phone}</p>
-            <p><strong>URL:</strong> ${business.website}</p>
+            <h2>${business.name}</h2>
+            <span class="tagline">${business.tagline}</span>
+            <div class="spotlight-body">
+                <img src="${business.image}" alt="${business.name} logo" 
+                     loading="lazy" width="100" height="100">
+                <div class="spotlight-info">
+                    <p><strong>EMAIL:</strong> ${business.email}</p>
+                    <p><strong>PHONE:</strong> ${business.phone}</p>
+                    <p><strong>URL:</strong> ${business.website}</p>
+                </div>
+            </div>
         `;
 
         spotlightContainer.appendChild(card);
