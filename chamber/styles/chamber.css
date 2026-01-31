@@ -154,7 +154,7 @@ h2 {
 }
 
 .hero-tagline {
-    grid: 1 / 2;
+    grid-area: 1 / 2;
     font-weight: 900;
     font-size: clamp(1.2rem, 4vw, 3.5rem);
     text-align: center;
@@ -171,7 +171,7 @@ h2 {
 }
 
 .hero .cta {
-    grid: 2 / 3;
+    grid-area: 2 / 3;
     justify-self: center;
     align-self: center;
     padding: clamp(0.8rem, 2vw, 1.5rem) clamp(1.5rem, 4vw, 3rem);
