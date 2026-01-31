@@ -21,7 +21,7 @@ body {
     background-color: var(--page-background);
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     font-family: 'Montserrat', sans-serif;
     color: var(--font-color);
     font-weight: normal;
@@ -126,8 +126,9 @@ header span {
 
 /* ================= HOME PAGE ================= */
 
-h2 {
+h3 {
     border-bottom: var(--primary-color) 1px solid;
+    font-size: 24px;
 }
 
 .home {
@@ -154,7 +155,7 @@ h2 {
 }
 
 .hero-tagline {
-    grid-area: 1 / 2;
+    grid-row: 1 / 2;
     font-weight: 900;
     font-size: clamp(1.2rem, 4vw, 3.5rem);
     text-align: center;
@@ -171,7 +172,7 @@ h2 {
 }
 
 .hero .cta {
-    grid-area: 2 / 3;
+    grid-row: 2 / 3;
     justify-self: center;
     align-self: center;
     padding: clamp(0.8rem, 2vw, 1.5rem) clamp(1.5rem, 4vw, 3rem);
@@ -187,7 +188,6 @@ h2 {
     background-color: var(--hover-state-color);
 }
 
-/* INFO GRID (Events + Weather) */
 .info-grid {
     display: grid;
     gap: 1rem;
@@ -211,12 +211,14 @@ h2 {
     width: 50px;
 }
 
-/* FORECAST */
 .weather-forecast p {
     margin: 0.3rem 0;
 }
 
-/* SPOTLIGHTS */
+#forecast p {
+    padding: 1rem;
+}
+
 .spotlights {
     display: grid;
     gap: 1rem;
