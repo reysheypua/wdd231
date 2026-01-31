@@ -92,7 +92,6 @@ header span {
     display: none;
     background-color: var(--secondary-color);
     color: white;
-    margin-right: 2rem;
 }
 
 .navigation.show {
@@ -123,6 +122,127 @@ header span {
 .navigation a:hover {
     transform: scale(1.2);
     color: white;
+}
+
+/* ================= HOME PAGE ================= */
+
+h2 {
+    border-bottom: var(--primary-color) 1px solid;
+}
+
+.home {
+    margin-bottom: 3rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 30px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.hero .welcome {
+    display: grid;
+    position: absolute;
+    grid-template-rows: 2fr 1fr;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    grid: 1 / 2;
+    font-weight: 900;
+    font-size: clamp(1.2rem, 4vw, 3.5rem);
+    text-align: center;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.hero img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(75%);
+}
+
+.hero .cta {
+    grid: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    padding: clamp(0.8rem, 2vw, 1.5rem) clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero .cta:hover {
+    background-color: var(--hover-state-color);
+}
+
+/* INFO GRID (Events + Weather) */
+.info-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.current-weather figure {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.current-weather img {
+    width: 50px;
+}
+
+/* FORECAST */
+.weather-forecast p {
+    margin: 0.3rem 0;
+}
+
+/* SPOTLIGHTS */
+.spotlights {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.spotlight {
+    text-align: center;
+}
+
+.spotlight img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+p {
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 /************************************ FOOTER ************************************/

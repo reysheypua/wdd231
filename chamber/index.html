@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Liloan Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Liloan, Cebu Chamber of Commerce. Connecting local businesses, providing growth resources, and advocating for the economic health of our community.">
+    <meta name="author" content="Reyshey Keena Pua">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-wide.css">
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/lcc-invrt-logo.png" alt="Liloan Chamber of Commerce Logo">
+        <span>Liloan Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Liloan Cebu scenery">
+            <div class="welcome">
+                <h1>Where Businesses Joins Together, Grows Together</h1>
+                <button class="cta">Join Now</button>
+            </div>
+        </section>
+
+        <h1>Home</h1>
+
+        <!-- WEATHER + EVENTS -->
+        <section class="info-grid">
+            <div class="events card">
+                <h2><strong>Events</strong></h2>
+                <p>No upcoming events at this time.</p>
+            </div>
+
+            <div class="current-weather card">
+                <h2><strong>Current Weather</strong></h2>
+                <div class="weather-body">
+                    <div class="icon-side">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="info-side">
+                        <p id="current-temp"></p>
+                        <p id="desc-text"></p>
+                        <p>High: <span id="temp-high"></span></p>
+                        <p>Low: <span id="temp-low"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-forecast card">
+                <h2><strong>3-Day Forecast</strong></h2>
+                <div id="forecast"></div>
+            </div>
+        </section>
+
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights">
+            <!-- JS inserts spotlight cards here -->
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Liloan Chamber of Commerce</strong></p>
+            <p>Liloan, Cebu, Philippines</p>
+            <p>info@liloancc.org</p>
+            <p>(032) 123-4567</p>
+        </div>
+
+        <div class="social-media">
+            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter-x.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Reyshey Pua</p>
+            <p>©<span id="currentyear"></span> Liloan Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

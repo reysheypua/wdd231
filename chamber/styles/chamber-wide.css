@@ -1,4 +1,4 @@
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 680px) {
     header {
         display: grid;
         grid-template-columns: 44px auto 1fr;
@@ -29,5 +29,14 @@
 
     .navigation ul {
         display: flex;
+    }
+
+    .info-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    /* SPOTLIGHTS */
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
