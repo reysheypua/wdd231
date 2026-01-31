@@ -126,9 +126,11 @@ header span {
 
 /* ================= HOME PAGE ================= */
 
-h3 {
+.info-grid h1 {
     border-bottom: var(--primary-color) 1px solid;
     font-size: 24px;
+    margin: 0;
+    color: var(--font-color);
 }
 
 .home {
