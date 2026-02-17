@@ -186,6 +186,10 @@ header span {
     cursor: pointer;
 }
 
+.hero a {
+    justify-self: center;
+}
+
 .hero .cta:hover {
     background-color: var(--hover-state-color);
 }
@@ -336,7 +340,6 @@ footer p {
 }
 
 /************************************ MAIN ************************************/
-
 main {
     margin-bottom: 5rem;
 }
