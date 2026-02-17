@@ -632,6 +632,11 @@ dialog::backdrop {
 
 /************************************ DISCOVER.HTML ************************************/
 
+.discover-main h1{
+    font-size: 1.4rem;
+    margin: 2rem 0 0 2rem;
+}
+
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -644,13 +649,6 @@ dialog::backdrop {
 
 .card:nth-child(1) { grid-area: card1; }
 .card:nth-child(2) { grid-area: card2; }
-
-.card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 30px;
-}
 
 .card img {
     width: 100%;
