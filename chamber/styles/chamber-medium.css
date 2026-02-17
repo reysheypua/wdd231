@@ -8,11 +8,11 @@
             "card7 card8";
     }
 
-    .card img:hover {
+    .discover-card img:hover {
         filter: saturate(1.5) contrast(1.1);
         transform: scale(1.03);
         transition: 0.4s ease-in-out;
         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
-    .card img { filter: grayscale(50%); }
+    .discover-card img { filter: grayscale(50%); }
 }
