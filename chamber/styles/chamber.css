@@ -125,7 +125,7 @@ header span {
 }
 
 .navigation a.active {
-    color: var(--accent-color);
+    color: #bde6ff;
     font-weight: bold;
 }
 
