@@ -583,6 +583,10 @@ dialog::backdrop {
     padding: 3rem 1rem;
 }
 
+.thankyou-page h1 {
+    margin: 0;
+}
+
 .thankyou-page p {
     word-break: normal;
     overflow-wrap: normal;
@@ -623,4 +627,63 @@ dialog::backdrop {
     color: white;
     text-decoration: none;
     border-radius: 4px;
+}
+
+
+/************************************ DISCOVER.HTML ************************************/
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "card1" "card2" "card3" "card4" 
+        "card5" "card6" "card7" "card8";
+    gap: 20px;
+    padding: 20px;
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-top: 1rem;
+}
+
+.card p {
+    word-break: normal;
+}
+
+.card button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.card button:hover {
+    background-color: var(--hover-state-color);
+}
+
+.message-area {
+    font-size: 2rem;
+    margin: 2rem;
 }

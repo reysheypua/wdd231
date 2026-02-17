@@ -35,16 +35,25 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
 
-    /* SPOTLIGHTS */
     .spotlights {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .join-container {
         display: grid;
-        grid-template-columns: 1.5fr 1fr; /* Form on left, cards on right */
+        grid-template-columns: 1.5fr 1fr;
         gap: 3rem;
         align-items: start;
     }
 
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
 }

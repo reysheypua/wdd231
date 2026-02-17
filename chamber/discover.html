@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Liloan Chamber of Commerce</title>
+    <title>Thank you for joining! | Liloan Chamber of Commerce</title>
 
     <meta name="description"
-        content="Liloan, Cebu Chamber of Commerce. Checks the statistics of weather and spotlights of businesses in Liloan, Cebu.">
+        content="Liloan, Cebu Chamber of Commerce. Provides a thank you message and content summary of the form that was just filled up.">
     <meta name="author" content="Reyshey Keena Pua">
 
     <meta property="og:title" content="Home | Chamber of Commerce">
     <meta property="og:description"
-        content="Liloan, Cebu Chamber of Commerce. Checks the statistics of weather and spotlights of businesses in Liloan, Cebu.">
+        content="Liloan, Cebu Chamber of Commerce. Provides a thank you message and content summary of the form that was just filled up.">
     <meta property="og:image"
         content="https://reysheypua.github.io/wdd231/chamber/index.html">
     <meta property="og:url" content="https://reysheypua.github.io/wdd231/chamber/index.html">
@@ -25,12 +25,12 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
     <link rel="stylesheet" href="styles/chamber-wide.css">
 
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/spotlights.js" type="module"></script>
 </head>
 
 <body>
@@ -48,56 +48,11 @@
         </nav>
     </header>
 
-    <main class="home">
-        <section class="hero">
-            <img src="images/hero-image.jpg" alt="Liloan Cebu scenery" width="1200" height="675">
-            <div class="welcome">
-                <h2 class="hero-tagline">Where Businesses Joins Together, Grows Together</h2>
-                <button class="cta">Join Now</button>
-            </div>
-        </section>
-
-        <h1>Home</h1>
-
-        <section class="info-grid">
-            <div class="events card">
-                <h2><strong>Events</strong></h2>
-                <p>No upcoming events at this time.</p>
-            </div>
-
-            <div class="current-weather card">
-                <h2><strong>Current Weather</strong></h2>
-                <div class="weather-body">
-                    <div class="icon-side">
-                        <figure>
-                            <img id="weather-icon" src="#" alt="#">
-                            <figcaption></figcaption>
-                        </figure>
-                    </div>
-                    <div class="info-side">
-                        <p id="current-temp"></p>
-                        <p id="desc-text"></p>
-                        <p>High: <span id="temp-high"></span></p>
-                        <p>Low: <span id="temp-low"></span></p>
-                        <p>Humidity: <span id="humidity"></span></p>
-                        <p>Sunrise: <span id="sunrise"></span></p>
-                        <p>Sunset: <span id="sunset"></span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="weather-forecast card">
-                <h2><strong>3-Day Forecast</strong></h2>
-                <div id="forecast"></div>
-            </div>
-        </section>
-
-        <section class="spotlights">
-            <div class="spotlight card">
-                <h3>#</h3>
-                <p></p>
-            </div>
-        </section>
+    <main>
+        <div id="visitor-message" class="message-area"></div>
+        
+        <section class="discover-grid">
+            </section>
     </main>
 
     <footer>
