@@ -41,7 +41,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" aria-current="page" class="active">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
@@ -58,7 +58,7 @@
                     <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
                 </label>
                 <label>Organizational Title
-                    <input type="text" name="title" autocomplete="organization-title" 
+                    <input type="text" name="title" required autocomplete="organization-title" 
                            pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters (alpha, hyphens, spaces only)">
                 </label>
                 <label>Email Address

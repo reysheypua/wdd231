@@ -124,6 +124,11 @@ header span {
     color: white;
 }
 
+.navigation a.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 /* ================= HOME PAGE ================= */
 
 .info-grid h2 {
