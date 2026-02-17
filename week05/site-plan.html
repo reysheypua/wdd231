@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Site Plan | The Daily Palette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site-plan.css">
+</head>
+<body>
+
+    <header>
+        <h1>Site Plan: The Daily Palette</h1>
+        <p>Created for W05 Project: Site Plan and Build</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> The Daily Palette</p>
+            <p><strong>Reasoning:</strong> I chose this name because "Palette" makes me think of an artist’s workspace, and "Daily" implies that users should come back every day to practice. It’s a simple way to say the site gives you new colors and new ideas every time you visit.</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The goal of this site is to help digital artists who don't know what to draw. It will show a cool piece of art from a museum to give you ideas, and it has a button you can click to get a random drawing prompt. If you see an idea you really like, you can save it to a "favorites" list so you don't forget it.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>"I have 30 minutes to practice drawing today, but I don't know what to draw or what colors to use. Where can I get a quick idea?"</li>
+                <li>"I found a prompt I really like but I have to leave now; how can I save this so I can see it when I get back to my computer later?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Scheme</h2>
+            <p>The site uses a high-contrast dark theme to allow artwork and colorful palettes to stand out.</p>
+            <p><div class="color-box" style="background-color: #121212;"></div> Primary Background: #121212</p>
+            <p><div class="color-box" style="background-color: #1E1E1E;"></div> Secondary/Surface: #1E1E1E</p>
+            <p><div class="color-box" style="background-color: #00E5FF;"></div> Accent/Links: #00E5FF</p>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p><strong>Headings:</strong> Montserrat (Sans-Serif) - Bold and modern for a tech-focused creative tool.</p>
+            <p><strong>Body Text:</strong> Open Sans (Sans-Serif) - Clean and highly legible for instructions and prompts.</p>
+        </section>
+
+        <section>
+            <h2>Wireframe (Home Page)</h2>
+            <p>The home page will feature a responsive design that adapts from a single-column mobile view to a dual-column desktop dashboard.</p>
+            
+            
+
+            <div class="wireframe-container">
+                <div class="wireframe-card mobile-view">
+                    <h3>Mobile</h3>
+                    <div class="wf-box">Logo / Nav</div>
+                    <div class="wf-box" style="height: 100px;">Art API Image</div>
+                    <div class="wf-box">Daily Prompt</div>
+                    <div class="wf-box">Footer</div>
+                </div>
+
+                <div class="wireframe-card">
+                    <h3>Desktop</h3>
+                    <div class="wf-box">Header (Logo - Nav - Profile)</div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="wf-box" style="flex: 2; height: 150px;">Main Art Display (Remote API)</div>
+                        <div class="wf-box" style="flex: 1;">Prompt Generator (JSON Data)</div>
+                    </div>
+                    <div class="wf-box">Footer</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | The Daily Palette | Individual Project Site Plan</p>
+    </footer>
+
+</body>
+</html>
