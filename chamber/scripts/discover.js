@@ -21,7 +21,7 @@ localStorage.setItem('lastVisitDate', now);
 
 itemsOfInterest.forEach((item, index) => {
     const card = document.createElement('section');
-    card.className = 'card';
+    card.className = 'discover-card';
     
     card.innerHTML = `
         <h2>${item.name}</h2>

@@ -640,6 +640,13 @@ dialog::backdrop {
     margin: 2rem 0 0 2rem;
 }
 
+.discover-card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -650,27 +657,34 @@ dialog::backdrop {
     padding: 20px;
 }
 
-.card:nth-child(1) { grid-area: card1; }
-.card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
 
-.card img {
+.discover-card img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.card h2 {
+.discover-card img:hover {
+        filter: saturate(1.5) contrast(1.1);
+        transform: scale(1.03);
+        transition: 0.4s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+.discover-card h2 {
     margin-top: 0;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--secondary-color);
     padding-top: 1rem;
 }
 
-.card p {
+.discover-card p {
     word-break: normal;
 }
 
-.card button {
+.discover-card button {
     display: inline-block;
     margin-bottom: 1rem;
     padding: 0.8rem 1.5rem;
@@ -680,7 +694,7 @@ dialog::backdrop {
     border-radius: 4px;
 }
 
-.card button:hover {
+.discover-card button:hover {
     background-color: var(--hover-state-color);
 }
 
