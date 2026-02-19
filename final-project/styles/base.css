@@ -525,3 +525,7 @@ label {
 #confirm-modal .modal-header {
     padding-left: 2rem;
 }
+
+.video-url {
+    color: var(--accent);
+}
