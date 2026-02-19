@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Palette | Prompt Lab</title>
+    <meta name="description" content="Explore drawing prompts and submit your own creative ideas.">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script src="scripts/main.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">🎨 The Daily Palette</div>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="lab.html" class="active">Prompt Lab</a>
+            <a href="studio.html">My Studio</a>
+        </nav>
+    </header>
+
+    <main class="lab">
+        <h1>Prompt Lab</h1>
+
+        <section class="card">
+            <h2>Color Palette Generator</h2>
+            <div id="palette-display" class="palette-grid">
+                </div>
+            <div class="palette-actions">
+                <button id="generate-palette" class="btn-primary">Generate New Palette</button>
+                <button id="save-palette" class="btn-secondary">Save Palette to Studio</button>
+            </div>
+        </section>
+
+        <section class="explore">
+            <h2>Explore</h2>
+            <div id="prompt-grid" class="card-container">
+                <p>Loading the lab...</p> </div>
+        </section>
+
+        <section class="card suggest-prompt">
+            <h2>Suggest a New Prompt</h2>
+            <p>Have a great idea for a drawing challenge? Let us know!</p>
+            <form method="get" action="thanks.html">
+                <div class="prompt-form">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+                    <label for="subject">Prompt Subject:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="e.g. A tired wizard">
+                </div>
+                <button type="submit" class="btn-primary submit-suggestion">Submit Suggestion</button>              
+            </form>
+        </section>
+
+        <dialog id="save-success-modal">
+            <div class="modal-header">
+                <h3>Success!</h3>
+                <button class="close-modal" id="close-success">&times;</button>
+            </div>
+            <div class="modal-content">
+                <p>Your color palette has been safely stored in <strong>My Studio</strong>.</p>
+                <div class="modal-actions">
+                    <button id="stay-btn" class="btn-secondary">Keep Creating</button>
+                    <a href="studio.html" class="btn-primary">Go to Studio</a>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="prompt-save-success">
+            <div class="modal-header">
+                <h3>Prompt Saved!</h3>
+            </div>
+            <div class="modal-content">
+                <p>This challenge has been added to your Studio collection.</p>
+                <button class="btn-primary" onclick="this.closest('dialog').close()">Great!</button>
+            </div>
+        </dialog>
+
+        <dialog id="already-saved-modal">
+            <div class="modal-header">
+                <h3 style="color: #f1c40f;">Already in Studio</h3>
+            </div>
+            <div class="modal-content">
+                <p>You have already saved this prompt to your collection. Try exploring a different challenge!</p>
+                <button class="btn-secondary" onclick="this.closest('dialog').close()">Got it</button>
+            </div>
+        </dialog>
+    </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> | The Daily Palette | Reyshey Keena A. Pua</p>
+        </footer>

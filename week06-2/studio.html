@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Palette | My Studio</title>
+    <meta name="description" content="View your saved drawing prompts and personal inspiration gallery.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script src="scripts/studio.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">🎨 The Daily Palette</div>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="lab.html">Prompt Lab</a>
+            <a href="studio.html" class="active">My Studio</a>
+        </nav>
+    </header>
+
+    <main class="studio">
+        <h1>My Creative Studio</h1>
+        <div class="studio-layout">
+        <section class="studio-column">
+            <h2>Saved Palettes</h2>
+            <div id="saved-palettes-grid" class="card-grid"></div>
+        </section>
+
+        <section class="studio-column">
+            <h2>Saved Prompts</h2>
+            <div id="saved-prompts-grid" class="card-grid"></div>
+        </section>
+    </div>
+
+    <dialog id="confirm-modal">
+        <div class="modal-header">
+            <h3>Confirm Deletion</h3>
+        </div>
+        <div class="modal-content">
+            <p>Are you sure you want to remove this item from your studio?</p>
+            <div class="modal-actions">
+                <button id="cancel-delete" class="btn-secondary">Cancel</button>
+                <button id="confirm-delete" class="btn-danger">Remove</button>
+            </div>
+        </div>
+    </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Daily Palette | Reyshey Keena A. Pua</p>
+    </footer>
+</body>
+</html>

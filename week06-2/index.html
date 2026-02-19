@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Palette | Home</title>
+    <meta name="description" content="Artistic inspiration and creative prompts.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="logo">🎨 The Daily Palette</span>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="lab.html">Prompt Lab</a>
+            <a href="studio.html">My Studio</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome-home">
+            <h1>Welcome to The Daily Palette!</h1>
+            <p>Start generating your color palette.</p>
+            <a href="lab.html" target="_blank"><button class="prompt-direct">Start Generating</button></a>
+        </div>
+    
+        <section id="hero">
+            <h2>Masterpiece of the Day</h2>
+            <div id="art-container">
+                <p>Fetching inspiration...</p>
+            </div>
+        </section>
+
+        <dialog id="art-modal">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="close-modal" aria-label="Close">&times;</button>
+            </div>
+            <div id="modal-content"></div>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Daily Palette | Reyshey Keena A. Pua</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    #menu-button { display: none; }
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .welcome-home {
+        padding: 4rem;
+    }
+    
+    #art-container img {
+        max-width: 50%;
+    }
+
+    .img-card h3 {
+        font-size: 24px;
+    }
+
+    .palette-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+        min-height: 150px;
+    }
+
+    .palette-actions {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        margin: 0 1rem;
+    }
+
+    #prompt-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .studio-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}

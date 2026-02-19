@@ -1,0 +1,19 @@
+{
+  "prompts": [
+    {"id": 1, "subject": "Cyberpunk Street", "style": "Impressionism", "difficulty": "Hard", "color": "Neon Blue"},
+    {"id": 2, "subject": "Forest Spirit", "style": "Surrealism", "difficulty": "Medium", "color": "Deep Green"},
+    {"id": 3, "subject": "Ancient Robot", "style": "Sketch", "difficulty": "Easy", "color": "Rust"},
+    {"id": 4, "subject": "Space Whale", "style": "Watercolor", "difficulty": "Hard", "color": "Purple"},
+    {"id": 5, "subject": "Desert Oasis", "style": "Minimalism", "difficulty": "Easy", "color": "Sand"},
+    {"id": 6, "subject": "Clockwork Cat", "style": "Steampunk", "difficulty": "Medium", "color": "Copper"},
+    {"id": 7, "subject": "Floating Island", "style": "Pixel Art", "difficulty": "Medium", "color": "Sky Blue"},
+    {"id": 8, "subject": "Lava Dragon", "style": "Digital Paint", "difficulty": "Hard", "color": "Magma Red"},
+    {"id": 9, "subject": "Ghost Ship", "style": "Oil Paint", "difficulty": "Medium", "color": "Ethereal White"},
+    {"id": 10, "subject": "Crystal Cave", "style": "Geometric", "difficulty": "Easy", "color": "Prism"},
+    {"id": 11, "subject": "Underwater City", "style": "Futuristic", "difficulty": "Hard", "color": "Aqua"},
+    {"id": 12, "subject": "Mountain Cabin", "style": "Cozy Art", "difficulty": "Easy", "color": "Warm Brown"},
+    {"id": 13, "subject": "Samurai Frog", "style": "Ukiyo-e", "difficulty": "Medium", "color": "Sage Green"},
+    {"id": 14, "subject": "Solar Punk Garden", "style": "Lush Art", "difficulty": "Medium", "color": "Emerald"},
+    {"id": 15, "subject": "Void Traveler", "style": "Abstract", "difficulty": "Hard", "color": "Obsidian"}
+  ]
+}
