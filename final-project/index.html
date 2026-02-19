@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Palette | Home</title>
-    <meta name="description" content="Artistic inspiration and creative prompts.">
+    <meta name="description" content="A landing page that features a Masterpiece of the Day.">
     <meta name="author" content="Your Name">
+
+    <link rel="icon" href="images/palette.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reysheypua.github.io/wdd231/final-project/">
+    <meta property="og:title" content="The Daily Palette | Masterpiece & Color Inspiration">
+    <meta property="og:description" content="Discover a new masterpiece every day and generate stunning color palettes to fuel your next creative project.">
+    <meta property="og:image" content="https://reysheypua.github.io/wdd231/final-project/images/og-preview.jpg">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" type="module"></script>
@@ -29,7 +38,7 @@
         <div class="welcome-home">
             <h1>Welcome to The Daily Palette!</h1>
             <p>Start generating your color palette.</p>
-            <a href="lab.html" target="_blank"><button class="prompt-direct">Start Generating</button></a>
+            <a href="lab.html" class="prompt-direct">Start Generating</a>
         </div>
     
         <section id="hero">
@@ -41,7 +50,7 @@
 
         <dialog id="art-modal">
             <div class="modal-header">
-                <h2 id="modal-title"></h2>
+                <h2 id="modal-title">Art Piece Details</h2>
                 <button class="close-modal" aria-label="Close">&times;</button>
             </div>
             <div id="modal-content"></div>
